@@ -9,14 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+//import { EmploymentService } from './employment.service';
+//import { EmploymentData }                 from './employment-data';
 var AppComponent = (function () {
     function AppComponent() {
-        this.name = 'Angular';
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<h1>Hello {{name}}</h1>",
+            template: "<header></header>\n\t\t\t<intro></intro>\n\t\t\t<employment></employment>\n\t\t\t<education></education>\n\t\t\t<footer></footer>\n\t\t\t",
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

@@ -13,7 +13,7 @@
 				"simpleName": "Worked with in house developers and contractors.",
 				"techUsed": ["HTML5", "CSS3", "Visio", "Java 6", "jQuery", "CVS", "Javascript"]
 			}, {
-				"taskName": "Managed summer high school intern program, mentored students in my charge through daily Scrum meetings, tought source control concepts, web application development concepts, and supervised their completion of an index of the city’s web applications.",
+				"taskName": "Managed summer high school intern program, mentored students in my charge through daily Scrum meetings, tought source control concepts, web application development concepts, and supervised their completion of an index of the city's web applications.",
 				"simpleName": "Managed and taught members of city high school intern program.",
 				"techUsed": ["CVS", "Underscore.js", "Javascript"]
 			}, {
@@ -106,7 +106,7 @@
 	}, {
 		"employer": "Structural Diagnostics, Inc.",
 		"location": "Indianapolis, IN",
-		"dates": "May 2004 – Nov 2005",
+		"dates": "May 2004 - Nov 2005",
 		"shortDates": "5/04 - 11/05",
 		"tasks": [{
 				"taskName": "Sole web developer for this privately held corporation.  ",

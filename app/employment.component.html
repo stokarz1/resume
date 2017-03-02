@@ -1,0 +1,42 @@
+<div class="container-fluid">
+	<div class="col-md-12">
+		<h6>
+			Employment:
+		</h6>
+	</div>
+	
+	<div *ngFor="let job of employmentData let jobIndex=index" class="col-md-12">
+		<div>
+			{{job.employer}}
+		</div>
+		<div>
+			{{job.location}}
+		</div>
+		<div class="hidden-sm-down">
+			{{job.dates}}
+		</div>
+		<div class="hidden-md-up">
+			{{job.shortDates}}
+		</div>
+		<div>
+			<ul>
+				<div *ngFor="let task of job.tasks let i=index">
+					<li>
+						<div class="hidden-sm-down" id="task_{{jobIndex}}_{{i}}" (click)="clickTask()">
+							{{task.taskName}}
+						</div>
+						<div class="hidden-md-up" id = "simpleTask_{{jobIndex}}_{{i}}">
+							{{task.simpleName}}
+						</div>
+						<div class="techContainerDiv hiddenTechDiv" id="techContainerDiv_{{jobIndex}}_{{i}}">
+							<div *ngFor="let tech of task.techUsed let j=index" class="pullLeft techDiv font-italic" id= "tech_{{jobIndex}}_{{j}}_{{i}}">
+								{{tech}}
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+				</div>
+			</ul>
+		</div>	
+	</div>
+</div>
