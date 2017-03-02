@@ -7,27 +7,33 @@
 		"tasks": [{
 				"taskName": "Web developer responsible for the full stack development of new features and applications, including feature requirement, ux design, and prototyping.",
 				"simpleName": "Full stack web developer, ux designer, and product manager.",
-				"techUsed": ["HTML5", "CSS3", "Visio", "Java 6", "MongoDB", "jQuery", "Underscore.js", "CVS", "Git", "Gitlab", "Word", "Javascript", "OracleDB"]
+				"techUsed": ["HTML5", "CSS3", "Visio", "Java 6", "MongoDB", "jQuery", "Underscore.js", "CVS", "Git", "Gitlab", "Word", "Javascript", "OracleDB"],
+				"showTech": 0
 			}, {
 				"taskName": "Worked directly with both an internal development team and external contractors.",
 				"simpleName": "Worked with in house developers and contractors.",
-				"techUsed": ["HTML5", "CSS3", "Visio", "Java 6", "jQuery", "CVS", "Javascript"]
+				"techUsed": ["HTML5", "CSS3", "Visio", "Java 6", "jQuery", "CVS", "Javascript"],
+				"showTech": 0
 			}, {
 				"taskName": "Managed summer high school intern program, mentored students in my charge through daily Scrum meetings, tought source control concepts, web application development concepts, and supervised their completion of an index of the city's web applications.",
 				"simpleName": "Managed and taught members of city high school intern program.",
-				"techUsed": ["CVS", "Underscore.js", "Javascript"]
+				"techUsed": ["CVS", "Underscore.js", "Javascript"],
+				"showTech": 0
 			}, {
 				"taskName": "Led initiative and did initial research on moving the City of Chicago from CVS source control into Git on an internally hosted Gitlab environment.",
 				"simpleName": "Started city on move from CVS to Git.",
-				"techUsed": ["CVS", "Git", "Gitlab"]
+				"techUsed": ["CVS", "Git", "Gitlab"],
+				"showTech": 0
 			}, {
 				"taskName": "Performed security and workflow audit of existing tech team and procedures.  Findings report was escalated to the CIO and Deputy CIO with whom I worked on developing a long term action plan.",
 				"simpleName": "Performed audit of secrity and workflow.  Results reported to CIO and Deputy CIO.",
-				"techUsed": ["Word", "CVS"]
+				"techUsed": ["Word", "CVS"],
+				"showTech": 0
 			}, {
 				"taskName": "Worked with the Department of Planning to develop a new web application for the Affordable Housing Ordinance to assure property developers remained in compliance of new rules that were passed.  Worked directly with original author of ordinance to fix any inconsistencies in ordinance language and ensure the application followed ordinance rules.",
 				"simpleName": "Created web application for Department of Planning to accomidate new Affordable Housing Ordinance.",
-				"techUsed": ["HTML5", "CSS3", "Visio", "MongoDB", "jQuery", "Underscore.js", "Git", "Javascript"]
+				"techUsed": ["HTML5", "CSS3", "Visio", "MongoDB", "jQuery", "Underscore.js", "Git", "Javascript"],
+				"showTech": 0
 			}
 
 		]
@@ -39,23 +45,28 @@
 		"tasks": [{
 				"taskName": "Front end developer responsible for gathering requirements of new interfaces, creating wireframes with Balsamiq in order to gather feedback from stakeholders, creating, and styling the new interfaces.",
 				"simpleName": "Front end developer and UX Designer.",
-				"techUsed": ["AngularJS", "UnderscoreJS", "CSS3", "HTML5", "Ruby", "Rails", "Javascript", "HSL", "jwPayer", "MD5", "MongoDB", "Javascript", "Balsamiq"]
+				"techUsed": ["AngularJS", "UnderscoreJS", "CSS3", "HTML5", "Ruby", "Rails", "Javascript", "HSL", "jwPayer", "MD5", "MongoDB", "Javascript", "Balsamiq"],
+				"showTech": 0
 			}, {
 				"taskName": "Created an interactive timeline in order to present a complicated schedule of events to the end user in an intuitive and compact manner.",
 				"simpleName": "Created an interactive timeline of events.",
-				"techUsed": ["AngularJS", "UnderscoreJS", "CSS3", "HTML5", "Ruby", "Rails", "Javascript"]
+				"techUsed": ["AngularJS", "UnderscoreJS", "CSS3", "HTML5", "Ruby", "Rails", "Javascript"],
+				"showTech": 0
 			}, {
 				"taskName": "Responsible for the creation of the front end of a new web application that allowed up to 3000 concurrent users to view a live video stream and ask questions in real time.  This included both front end validation and MD5 hashing to ensure security.",
 				"simpleName": "Created streaming web app for 3000 concurrent users.",
-				"techUsed": ["AngularJS", "HSL", "jwPayer", "HTML5", "CSS3", "MD5", "MongoDB", "Javascript"]
+				"techUsed": ["AngularJS", "HSL", "jwPayer", "HTML5", "CSS3", "MD5", "MongoDB", "Javascript"],
+				"showTech": 0
 			}, {
 				"taskName": "Implemented HDS live streaming using jwPlayer, and industry standard HTML5 video player with a Flash fallback, and themed to the brand message.",
 				"simpleName": "Implemented live streaming using modern player technoogy",
-				"techUsed": ["HSL", "jwPayer"]
+				"techUsed": ["HSL", "jwPayer"],
+				"showTech": 0
 			}, {
 				"taskName": "All work verified to work in all modern desktop and mobile browsers, including IE 8, 9, 10, 11, Chrome, Firefox, and Mobile Safari.",
 				"simpleName": "Verified applications in current and past browsers",
-				"techUsed": []
+				"techUsed": [],
+				"showTech": 0
 			}
 
 		]
@@ -67,39 +78,48 @@
 		"tasks": [{
 				"taskName": "Involved in the full stack development of a client facing dashboard to allow clients to receive real time information instead of traditional printed reports. Front end developed using jQuery, Underscore, and SCSS.   Back end done in Python.",
 				"simpleName": "Full stack development of an application to replace printed reports with interactive ones.",
-				"techUsed": ["HTML5", "CSS3", "jQuery", "Python", "UnderscoreJS", "SCSS", "MSSql", "Javascript"]
+				"techUsed": ["HTML5", "CSS3", "jQuery", "Python", "UnderscoreJS", "SCSS", "MSSql", "Javascript"],
+				"showTech": 0
 			}, {
 				"taskName": "Worked on a team that implemented a complete redesign of our customer facing system, a new hotel booking site in jQuery and Python. ",
 				"simpleName": "Part of a team that redesigned our customer system in jQuery and Python.",
-				"techUsed": ["HTML5", "CSS3", "jQuery", "Python", "UnderscoreJS", "SCSS", "MSSql", "Javascript"]
+				"techUsed": ["HTML5", "CSS3", "jQuery", "Python", "UnderscoreJS", "SCSS", "MSSql", "Javascript"],
+				"showTech": 0
 			}, {
 				"taskName": "Frequently implemented front end interfaces with guidance from either a .psd or Balsamiq wireframe. Comfortable creating new back end behaviors and data routines from a spec doc. ",
 				"simpleName": "Created interfaces from .psd or wireframes and made necessary back end changes.",
-				"techUsed": ["HTML5", "CSS3", "jQuery", "Coldfusion", "Balsamiq", "MSSql", "Javascript"]
+				"techUsed": ["HTML5", "CSS3", "jQuery", "Coldfusion", "Balsamiq", "MSSql", "Javascript"],
+				"showTech": 0
 			}, {
 				"taskName": "Worked with our product team to flesh out new features, both in brainstorming ideas and explaining the limitations of our system.",
 				"simpleName": "Brainstormed new features and ideas with product team.",
-				"techUsed": ["Word", "Balsamiq"]
+				"techUsed": ["Word", "Balsamiq"],
+				"showTech": 0
 			}, {
 				"taskName": "Responsible for developing and maintaining a suite of POX web services to enable the secure transfer of customer information between our company and our partners. ",
 				"simpleName": "Created POX webservices.",
-				"techUsed": ["Coldfusion", "XML", "HTTP Post", "HTTP Get"]
+				"techUsed": ["Coldfusion", "XML", "HTTP Post", "HTTP Get"],
+				"showTech": 0
 			}, {
 				"taskName": "Responsible for consuming 3rd party SOAP web services in order to allow our system to book air and sell 3rd party hotels.",
 				"simpleName": "Created system to consume 3rd party SOAP web services.",
-				"techUsed": ["SOAP", "Coldfusion", "XML", "HTTP Post", "HTTP Get"]
+				"techUsed": ["SOAP", "Coldfusion", "XML", "HTTP Post", "HTTP Get"],
+				"showTech": 0
 			}, {
 				"taskName": "Internationalized websites in order to support European languages, currency formats, and date formats.",
 				"simpleName": "Internationalized websites.",
-				"techUsed": ["Coldfusion", "Python", "HTML5", "CSS3"]
+				"techUsed": ["Coldfusion", "Python", "HTML5", "CSS3"],
+				"showTech": 0
 			}, {
 				"taskName": "Responsible for maintaining a legacy Coldfusion web application that was used internally by over 100 people and sold to clients internationally.",
 				"simpleName": "Maintained Legacy Coldfusion system.",
-				"techUsed": ["Coldfusion", "HTML5", "CSS3", "Javascript", "jQuery"]
+				"techUsed": ["Coldfusion", "HTML5", "CSS3", "Javascript", "jQuery"],
+				"showTech": 0
 			}, {
 				"taskName": "Worked to implement unit tests and Selenium tests for new features and to add testing to legacy code.",
 				"simpleName": "Implemented Selenium tests.",
-				"techUsed": ["Selenium"]
+				"techUsed": ["Selenium"],
+				"showTech": 0
 			}
 
 		]
@@ -111,23 +131,28 @@
 		"tasks": [{
 				"taskName": "Sole web developer for this privately held corporation.  ",
 				"simpleName": "Sole web developer",
-				"techUsed": [".Net", "MS Access"]
+				"techUsed": [".Net", "MS Access"],
+				"showTech": 0
 			}, {
 				"taskName": "Duties included creation of industry leading website for this advanced technology company.  Full static web site created in HTML and CSS",
 				"simpleName": "Created company website",
-				"techUsed": ["HTML", "CSS"]
+				"techUsed": ["HTML", "CSS"],
+				"showTech": 0
 			}, {
 				"taskName": "Lead project engineer for designing, developing, and implementing a company web based intranet with ASP.net technology.",
 				"simpleName": "Created company intranet to replace paper based system",
-				"techUsed": [".Net", "MS Access"]
+				"techUsed": [".Net", "MS Access"],
+				"showTech": 0
 			}, {
 				"taskName": "Team leader responsible for implementing an ISO 9001 compliant quality system.",
 				"simpleName": "Responsible for implementing an ISO 9001 complian system",
-				"techUsed": ["Word"]
+				"techUsed": ["Word"],
+				"showTech": 0
 			}, {
 				"taskName": "Created manuals, procedures, and work instructions for the manufacture of company made ultrasonic test equipment.",
 				"simpleName": "Created manuals, procedures, and work instructions for the manufacture of company made ultrasonic test equipment.",
-				"techUsed": ["Word"]
+				"techUsed": ["Word"],
+				"showTech": 0
 			}
 
 		]

@@ -27,8 +27,11 @@ var EmploymentComponent = (function () {
     EmploymentComponent.prototype.ngAfterViewChecked = function () {
         console.log(this.employmentData);
     };
-    EmploymentComponent.prototype.clickTask = function (identifier) {
-        console.log(identifier);
+    EmploymentComponent.prototype.clickTask = function (jobIndex, taskIndex) {
+        console.log(jobIndex);
+        console.log(taskIndex);
+        console.log(this.employmentData);
+        this.employmentData[jobIndex].tasks[taskIndex].showTech = !this.employmentData[jobIndex].tasks[taskIndex].showTech;
     };
     EmploymentComponent = __decorate([
         core_1.Component({

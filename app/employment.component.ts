@@ -11,7 +11,7 @@ export class EmploymentComponent {
 	errorMessage: string;
 	employmentData: EmploymentData[];
 	mode = 'Observable';
-
+	
 	constructor (private employmentService: EmploymentService) {}
 
 	ngOnInit() { 
@@ -27,12 +27,15 @@ export class EmploymentComponent {
 		error =>  this.errorMessage = <any>error);
   }
 
-  ngAfterViewChecked() {
-	 console.log(this.employmentData); 
-  }
+	  ngAfterViewChecked() {
+		 console.log(this.employmentData); 
+	  }
 	
-	clickTask(identifier) {
-		console.log(identifier);
+	clickTask(jobIndex, taskIndex) {
+		console.log(jobIndex);
+		console.log(taskIndex);
+		console.log(this.employmentData);
+		this.employmentData[jobIndex].tasks[taskIndex].showTech = !this.employmentData[jobIndex].tasks[taskIndex].showTech;
 	}
   
 }
