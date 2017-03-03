@@ -1,8 +1,8 @@
 import { InMemoryDbService } from 'angular-in-memory-web-api';
 export class EmploymentData implements InMemoryDbService {
   createDb() {
-    let employment = [ { } ];
-    return {employment};
+    let employmentData = [ { } ];
+    return {employmentData};
   }
 }
 

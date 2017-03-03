@@ -3,8 +3,8 @@ var EmploymentData = (function () {
     function EmploymentData() {
     }
     EmploymentData.prototype.createDb = function () {
-        var employment = [{}];
-        return { employment: employment };
+        var employmentData = [{}];
+        return { employmentData: employmentData };
     };
     return EmploymentData;
 }());

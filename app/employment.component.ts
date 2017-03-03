@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
-import { EmploymentService } from './employment.service';
-import { EmploymentData }                 from './employment-data';
+import { Component, Input } from '@angular/core';
+import { EmploymentData } from './employment-data';
 
 @Component({
   selector: 'employment',
   templateUrl: 'app/employment.component.html',
-  providers: [EmploymentService]
 })
 export class EmploymentComponent { 
-	errorMessage: string;
+	@Input() employmentData: EmploymentData;
+	/*errorMessage: string;
 	employmentData: EmploymentData[];
 	mode = 'Observable';
 	
@@ -25,10 +24,10 @@ export class EmploymentComponent {
 		.subscribe(
 		employmentData => this.employmentData = employmentData,
 		error =>  this.errorMessage = <any>error);
-  }
+  }*/
 
 	  ngAfterViewChecked() {
-		 console.log(this.employmentData); 
+		 //console.log(this.employmentData); 
 	  }
 	
 	clickTask(jobIndex, taskIndex) {

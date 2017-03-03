@@ -12,6 +12,8 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var http_1 = require('@angular/http');
+var ng_bootstrap_1 = require('@ng-bootstrap/ng-bootstrap');
+var modal_basic_1 = require('./modal-basic');
 var app_component_1 = require('./app.component');
 var employment_component_1 = require('./employment.component');
 var header_component_1 = require('./header.component');
@@ -26,13 +28,15 @@ var AppModule = (function () {
             imports: [platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
                 http_1.HttpModule,
-                http_1.JsonpModule],
+                http_1.JsonpModule,
+                ng_bootstrap_1.NgbModule.forRoot()],
             declarations: [app_component_1.AppComponent,
                 employment_component_1.EmploymentComponent,
                 header_component_1.HeaderComponent,
                 intro_component_1.IntroComponent,
                 education_component_1.EducationComponent,
-                footer_component_1.FooterComponent
+                footer_component_1.FooterComponent,
+                modal_basic_1.NgbdModalBasic
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

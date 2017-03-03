@@ -12,10 +12,17 @@ var core_1 = require('@angular/core');
 var HeaderComponent = (function () {
     function HeaderComponent() {
     }
+    HeaderComponent.prototype.ngAfterViewChecked = function () {
+        console.log(this.employmentData);
+    };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], HeaderComponent.prototype, "employmentData", void 0);
     HeaderComponent = __decorate([
         core_1.Component({
             selector: 'header',
-            templateUrl: 'app/header.component.html',
+            templateUrl: 'app/header.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], HeaderComponent);

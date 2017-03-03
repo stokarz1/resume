@@ -9,23 +9,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var employment_service_1 = require('./employment.service');
+var employment_data_1 = require('./employment-data');
 var EmploymentComponent = (function () {
-    function EmploymentComponent(employmentService) {
-        this.employmentService = employmentService;
-        this.mode = 'Observable';
+    function EmploymentComponent() {
     }
-    EmploymentComponent.prototype.ngOnInit = function () {
-        this.getEmployment();
-        //console.log(employmentData);
-    };
-    EmploymentComponent.prototype.getEmployment = function () {
-        var _this = this;
-        this.employmentService.getEmployment()
-            .subscribe(function (employmentData) { return _this.employmentData = employmentData; }, function (error) { return _this.errorMessage = error; });
-    };
+    /*errorMessage: string;
+    employmentData: EmploymentData[];
+    mode = 'Observable';
+    
+    constructor (private employmentService: EmploymentService) {}
+
+    ngOnInit() {
+    this.getEmployment();
+    //console.log(employmentData);
+
+    }
+
+    getEmployment() {
+    this.employmentService.getEmployment()
+        .subscribe(
+        employmentData => this.employmentData = employmentData,
+        error =>  this.errorMessage = <any>error);
+  }*/
     EmploymentComponent.prototype.ngAfterViewChecked = function () {
-        console.log(this.employmentData);
+        //console.log(this.employmentData); 
     };
     EmploymentComponent.prototype.clickTask = function (jobIndex, taskIndex) {
         console.log(jobIndex);
@@ -33,13 +40,16 @@ var EmploymentComponent = (function () {
         console.log(this.employmentData);
         this.employmentData[jobIndex].tasks[taskIndex].showTech = !this.employmentData[jobIndex].tasks[taskIndex].showTech;
     };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', employment_data_1.EmploymentData)
+    ], EmploymentComponent.prototype, "employmentData", void 0);
     EmploymentComponent = __decorate([
         core_1.Component({
             selector: 'employment',
             templateUrl: 'app/employment.component.html',
-            providers: [employment_service_1.EmploymentService]
         }), 
-        __metadata('design:paramtypes', [employment_service_1.EmploymentService])
+        __metadata('design:paramtypes', [])
     ], EmploymentComponent);
     return EmploymentComponent;
 }());
