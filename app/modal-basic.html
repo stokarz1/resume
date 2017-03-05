@@ -1,20 +1,44 @@
 <template #content let-c="close" let-d="dismiss">
   <div class="modal-header">
-    <h4 class="modal-title">Modal title</h4>
+    <h4 class="modal-title">Welcome to my resume</h4>
     <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-      <span aria-hidden="true">&times;</span>
     </button>
   </div>
   <div class="modal-body">
-    <p>One fine body&hellip;</p>
+    
+	<div class="welcomeBody">
+		<div class="welcomeText">
+			Hi, I'm Steve Tokarz and this is my interactive resume.
+		</div>
+		<div class="welcomeBody">
+			<p>
+				I wrote this site to better learn Angular.js 2, now known as simply Angular.  
+				This makes googling and searching stackoverflow for information on the correct verson much more difficult than if they chose absolutely any other name.
+				I'm also using the Bootstrap 4 alpha to see what's new there.
+			</p>
+			<p>
+				This site has a few tricks I wanted to try out in Angular.  If you click on any of the tasks in the Employment section it will show you what technology was used to perform that task.
+				You can also search for a specific technology in the search box in the header and all tasks with the corresponding technology will be highlighted.
+			</p>
+			<p>
+				If you don't want to use this interactive version of my resume, you can download a pdf version <a href="app/tokarz_resume.pdf">here</a>.
+				Also, if you want to view the source of this project on github at <a href="https://github.com/stokarz1/resume">https://github.com/stokarz1/resume</a>
+				Thanks for visiting and if you want to see this modal again simply click on the "?" button in the header.
+			</p>
+		</div>
+
+	</div>
+
+	
+	
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
   </div>
 </template>
 
-<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
-
+<div class="col-md-1 pullRight">
+	<button class="btn btn-lg btn-outline-primary" (click)="open(content)">?</button>
+</div>
 <hr>
 
-<pre>{{closeResult}}</pre>

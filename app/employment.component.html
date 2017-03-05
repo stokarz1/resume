@@ -25,13 +25,13 @@
 						<div class="hidden-sm-down" id="task_{{jobIndex}}_{{i}}" (click)="clickTask(jobIndex, i)">
 							{{task.taskName}}
 						</div>
-						<div class="hidden-md-up" id = "simpleTask_{{jobIndex}}_{{i}}">
+						<div class="hidden-md-up" id = "simpleTask_{{jobIndex}}_{{i}}" (click)="clickTask(jobIndex, i)">
 							{{task.simpleName}}
 						</div>
 						<div *ngIf="task.showTech" >
 							<div  class="techContainerDiv" id="techContainerDiv_{{jobIndex}}_{{i}}">
 								<div *ngFor="let tech of task.techUsed let j=index" class="pullLeft techDiv font-italic" id= "tech_{{jobIndex}}_{{j}}_{{i}}">
-									{{tech}}
+									{{tech.name}}
 								</div>
 								<div class="clearfix"></div>
 							</div>

@@ -9,15 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var employment_data_1 = require('./employment-data');
 var HeaderComponent = (function () {
     function HeaderComponent() {
     }
     HeaderComponent.prototype.ngAfterViewChecked = function () {
         console.log(this.employmentData);
     };
+    HeaderComponent.prototype.searchTech = function (techName) {
+        console.log(techName);
+        console.log(techName.length);
+        _.each(this.employmentData, function (job) {
+            console.log(job);
+            _each(job.task, function (task) { }, console.log(task));
+        });
+    };
+    ;
     __decorate([
         core_1.Input(), 
-        __metadata('design:type', Object)
+        __metadata('design:type', employment_data_1.EmploymentData)
     ], HeaderComponent.prototype, "employmentData", void 0);
     HeaderComponent = __decorate([
         core_1.Component({

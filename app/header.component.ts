@@ -10,10 +10,24 @@ import { EmploymentData } from './employment-data';
 })
 
 export class HeaderComponent { 
-	@Input() employmentData: employmentData;
+	@Input() employmentData: EmploymentData;
 
 	
 	ngAfterViewChecked() {
 		 console.log(this.employmentData); 
 	}
+	
+	searchTech(techName){
+		console.log(techName);
+		console.log(techName.length);
+		_.each(this.employmentData, function(job){
+			console.log(job);
+			_each(job.task function(task){}
+				console.log(task);
+			)
+		});
+	}
+	
+
+	
 }
