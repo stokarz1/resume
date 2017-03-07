@@ -1,0 +1,9 @@
+<div class="container-fluid">
+	
+	<div class="col-md-2 pullRight">
+		<input #searchText type="text" name="searchContent" id="searchContent" (keyup)="searchTech(searchText.value)">
+	</div>
+	
+	<template ngbModalContainer></template>
+	<ngbd-modal-basic></ngbd-modal-basic>
+</div>

@@ -9,16 +9,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var employment_service_1 = require('./employment.service');
 var AppComponent = (function () {
-    function AppComponent() {
-        this.name = 'Angular';
+    function AppComponent(employmentService) {
+        this.employmentService = employmentService;
+        this.mode = 'Observable';
     }
+    AppComponent.prototype.ngOnInit = function () {
+        this.getEmployment();
+        //console.log(employmentData);
+    };
+    AppComponent.prototype.getEmployment = function () {
+        var _this = this;
+        this.employmentService.getEmployment()
+            .subscribe(function (employmentData) { return _this.employmentData = employmentData; }, function (error) { return _this.errorMessage = error; });
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<h1>Hello {{name}}</h1>",
+            template: "<header [employmentData]=\"employmentData\"></header>\n\t\t\t<intro></intro>\n\t\t\t<employment [employmentData]=\"employmentData\"></employment>\n\t\t\t<education></education>\n\t\t\t<footer></footer>\n\t\t\t",
+            providers: [employment_service_1.EmploymentService]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [employment_service_1.EmploymentService])
     ], AppComponent);
     return AppComponent;
 }());

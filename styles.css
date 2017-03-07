@@ -3,3 +3,27 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
+
+
+.introText{
+		text-align:center;
+		
+}
+
+.pullLeft{
+	float:left;
+}
+
+.pullRight{
+	float:right;
+}
+
+.techDiv{
+	margin-right:5px;
+	font-size:0.9rem;
+
+}
+
+.hiddenTechDiv{
+	display:none;
+}
